@@ -2,4 +2,4 @@
 
 Author: Daniel Scocco
 Email: danielscocco@gmail.com
-More scripts: https://www.botware.com.br
+Site: https://www.botware.com.br
