@@ -1,6 +1,6 @@
 var app = require('express').createServer();
 var pos = 0;
-app.get('/',function(req,res) {
+app.get('/api',function(req,res) {
 	
 	res.send(req.params.id);
 });
