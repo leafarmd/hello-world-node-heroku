@@ -2,9 +2,9 @@ var app = require('express').createServer();
 var pos = 0;
 app.get('/',function(req,res) {
 	if pos == 0 {
-	  pos = 1
+	  pos = 1;
 	} else {
-	  pos = 0
+	  pos = 0;
 	}
 	res.send(pos);
 });
