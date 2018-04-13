@@ -1,6 +1,6 @@
 var app = require('express').createServer();
 var cont = 0;
-app.get('/api',function(req,res) {
+app.get('/',function(req,res) {
 	res.send(cont);
 });
 
