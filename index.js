@@ -5,10 +5,10 @@ app.get('/',function(req,res) {
 	if(id == 1) {
 		cont = 1;
 	}
-	if(id == 2) {
-		cont = 2;
+	if(id == 0) {
+		cont = 0;
 	}
-	res.send("hello world" + cont);
+	res.send("" + cont);
 });
 
 app.listen(process.env.PORT || 3000,function(){
