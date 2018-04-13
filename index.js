@@ -1,8 +1,6 @@
 var app = require('express').createServer();
-var pos = 0;
 app.get('/',function(req,res) {
-	pos = pos + 1;
-	res.send(pos);
+	res.send("Hello World");
 });
 
 app.listen(process.env.PORT || 3000,function(){
