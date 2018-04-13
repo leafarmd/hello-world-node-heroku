@@ -6,7 +6,7 @@ app.get('/',function(req,res) {
 	} else {
 	  pos = 0;
 	}
-	res.send(pos);
+	res.send(""+pos);
 });
 
 app.listen(process.env.PORT || 3000,function(){
