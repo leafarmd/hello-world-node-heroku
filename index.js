@@ -1,7 +1,7 @@
 var app = require('express').createServer();
 var resp = 0;
 app.get('/api',function(req,res) {
-	var id = req.query.id;
+	
 	
 	  res.send(resp);
 });
