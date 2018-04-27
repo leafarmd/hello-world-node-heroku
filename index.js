@@ -3,10 +3,10 @@ var status = "desligado";
 app.get('/',function(req,res) {
 	var id = req.query.id;
 	if(id == 1) {
-		status = "desligado";
+		status = "ligado";
 	}
 	if(id == 0) {
-		status = "ligado";
+		status = "desligado";
 	}
 	res.send("" + status);
 });
