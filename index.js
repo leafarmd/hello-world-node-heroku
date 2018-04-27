@@ -1,12 +1,12 @@
 var app = require('express').createServer();
-var status = 'desligado';
+var status = "desligado";
 app.get('/',function(req,res) {
 	var id = req.query.id;
 	if(id == 1) {
-		status = 'desligado';
+		status = "desligado";
 	}
 	if(id == 0) {
-		status = 'ligado';
+		status = "ligado";
 	}
 	res.send("" + status);
 });
