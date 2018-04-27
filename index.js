@@ -1,14 +1,14 @@
 var app = require('express').createServer();
-var cont = 0;
+var status = 'desligado';
 app.get('/',function(req,res) {
 	var id = req.query.id;
 	if(id == 1) {
-		cont = 1;
+		status = 'desligado';
 	}
 	if(id == 0) {
-		cont = 0;
+		status = 'ligado';
 	}
-	res.send("" + cont);
+	res.send("" + status);
 });
 
 app.listen(process.env.PORT || 3000,function(){
