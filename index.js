@@ -1,5 +1,6 @@
 var app = require('express').createServer();
 var status = "desligado";
+console.log("!! " + status + " !!");
 app.get('/',function(req,res) {
 	var id = req.query.id;
 	if(id == 1) {
