@@ -8,9 +8,10 @@ app.get('/',function(req,res) {
 	if(id == 0) {
 		status = "desligado";
 	}
+	console.log("!! " + status + " !!");
 	res.send("<" + id + ">");
 });
-
+console.log("!! " + status + " !!");
 app.listen(process.env.PORT || 3000,function(){
 	console.log("listening on 3000");
 });
