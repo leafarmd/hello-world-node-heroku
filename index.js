@@ -8,7 +8,7 @@ app.get('/',function(req,res) {
 	if(id == 0) {
 		status = "desligado";
 	}
-	res.send("<" + status + ">");
+	res.send("<" + id + ">");
 });
 
 app.listen(process.env.PORT || 3000,function(){
